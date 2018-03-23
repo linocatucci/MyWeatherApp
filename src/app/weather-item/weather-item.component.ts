@@ -8,7 +8,10 @@ import { WeatherItem } from '../models/weather.item.model';
 })
 export class WeatherItemComponent implements OnInit {
   weatherItem: WeatherItem;
-  constructor() { }
+
+  constructor() {
+    this.weatherItem = new WeatherItem('London', 'Rainy', 10)
+  }
 
   ngOnInit() {
   }
