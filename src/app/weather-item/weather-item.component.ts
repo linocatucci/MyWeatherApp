@@ -13,5 +13,7 @@ export class WeatherItemComponent implements OnInit {
     this.weatherItem = new WeatherItem("London", "Rainy", 10);
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('dit is een testje')
+  }
 }
