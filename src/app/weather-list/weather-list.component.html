@@ -1,4 +1,3 @@
 <section class="weather-list">
-  <app-weather-item></app-weather-item>
+  <app-weather-item *ngFor="let weatherEl of weatherItems" [item]="weatherEl"></app-weather-item>
 </section>
-
