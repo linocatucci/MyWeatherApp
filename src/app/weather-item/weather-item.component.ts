@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { WeatherItem } from "../models/weather.item.model";
 
 @Component({
@@ -7,13 +7,14 @@ import { WeatherItem } from "../models/weather.item.model";
   styleUrls: ["./weather-item.component.css"]
 })
 export class WeatherItemComponent implements OnInit {
-  weatherItem: WeatherItem;
+  @Input('item') weatherItem: WeatherItem;
 
   constructor() {
-    this.weatherItem = new WeatherItem("London", "Rainy", 10);
+    // this.weatherItem = new WeatherItem("London", "Rainy", 10);
   }
 
   ngOnInit() {
-    console.log('dit is een testje')
+    console.log('in de item comp!');
   }
 }
+
