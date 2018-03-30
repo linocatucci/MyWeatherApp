@@ -1,0 +1,12 @@
+<section class="weather-search">
+  <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <label for="City">Enter a City</label>
+    <input type="text" id="City" formControlName="City" class="form-control" placeholder="City Name"
+           (input)="onSearchLocation($event)">
+    <hr>
+    <button class="btn btn-primary" type="submit" [disabled]="!searchForm.valid">Submit</button>
+  </form>
+  <div class="info2">
+    <span class="info">City found: </span> <strong>{{data.name}}</strong>
+  </div>
+</section>

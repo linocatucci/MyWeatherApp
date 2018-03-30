@@ -14,7 +14,7 @@ export class WeatherItemComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('in de item comp!');
+
   }
 }
 

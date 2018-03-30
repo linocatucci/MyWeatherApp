@@ -13,7 +13,6 @@ export class WeatherListComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('In the init van weather list');
     this.weatherItems = this.weatherService.getWeatherItems();
   }
 

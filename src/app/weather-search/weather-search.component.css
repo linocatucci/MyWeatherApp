@@ -1,0 +1,25 @@
+.info {
+  color: rgba(95, 95, 95, 0.51);
+  font-weight: bold;
+
+}
+
+.info2 {
+  margin-top: 15px;
+}
+
+.weather-search {
+  margin: 20px auto;
+  width: 40%;
+  text-align: center;
+}
+
+
+button {
+  background-color: #2ecc71;
+  border: none;
+  padding: 4px 8px;
+  box-shadow: 1px 1px 1px #95a5a6;
+  cursor: pointer;
+  color: white;
+}

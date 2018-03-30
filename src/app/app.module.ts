@@ -8,9 +8,11 @@ import { ReactiveFormsModule } from "@angular/forms";
 
 
 import { WeatherService } from './weather.service';
+import { WeatherSearchComponent } from './weather-search/weather-search.component';
+
 
 @NgModule({
-  declarations: [AppComponent, WeatherListComponent, WeatherItemComponent],
+  declarations: [AppComponent, WeatherListComponent, WeatherItemComponent, WeatherSearchComponent],
   imports: [BrowserModule, HttpClientModule, ReactiveFormsModule],
   providers: [WeatherService],
   bootstrap: [AppComponent]
