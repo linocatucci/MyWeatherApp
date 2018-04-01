@@ -9,10 +9,11 @@ import { ReactiveFormsModule } from "@angular/forms";
 
 import { WeatherService } from './weather.service';
 import { WeatherSearchComponent } from './weather-search/weather-search.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
-  declarations: [AppComponent, WeatherListComponent, WeatherItemComponent, WeatherSearchComponent],
+  declarations: [AppComponent, WeatherListComponent, WeatherItemComponent, WeatherSearchComponent, SidebarComponent],
   imports: [BrowserModule, HttpClientModule, ReactiveFormsModule],
   providers: [WeatherService],
   bootstrap: [AppComponent]

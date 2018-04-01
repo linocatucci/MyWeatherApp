@@ -13,6 +13,7 @@ export class WeatherSearchComponent implements OnInit, OnDestroy {
   searchForm: FormGroup;
   cityName = '';
   subscription;
+  subscription2;
   data: any = {};
   private searchStream = new Subject<string>();
 
